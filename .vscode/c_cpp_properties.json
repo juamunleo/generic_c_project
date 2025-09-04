@@ -1,7 +1,7 @@
 {
     "env": {
         "genericInclude": [
-            "${workspaceFolder}/src"
+            "${workspaceFolder}/include"
         ],
         "unitTestInclude": [
             "${workspaceFolder}/test/unit/include",

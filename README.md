@@ -9,3 +9,4 @@ This template contains a simple *file.c* and *file.h*, and an unimplemented unit
 - *src* and *include* folders with your code (also *test/unit* *src* and *include* folders)
 - In *CMakeLists.txt*, `project(ProjectName)`, replace `ProjectName` with the name of your project
 - In *test/unit/src/main.c* and *test/unit/src/file_test.c*, replace `ModuleName` with the name of the module you want to test.
+- In *.vscode/tasks.json*, replace `ProjectName` with the name of your executable (should be the same as the CMake project name).
