@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build release",
+            "command": "rm -rf ${workspaceFolder}/build/release && cmake -S ${workspaceFolder} -B ${workspaceFolder}/build/release && cmake --build ${workspaceFolder}/build/release",
+            "type": "shell",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "reveal": "always"
+            },
+            "group": "build"
+        },
+        {
+            "label": "Build and execute unit tests",
+            "command": "rm -rf ${workspaceFolder}/build/test && cmake -S ${workspaceFolder} -B ${workspaceFolder}/build/test -DCMAKE_BUILD_TYPE=\"UnitTest\" && cmake --build ${workspaceFolder}/build/test && ${workspaceFolder}/build/test/ProjectName",
+            "type": "shell",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "reveal": "always"
+            },
+            "group": "test"
+        }
+    ]
+}

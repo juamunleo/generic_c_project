@@ -1,0 +1,33 @@
+{
+    "env": {
+        "genericInclude": [
+            "${workspaceFolder}/src"
+        ],
+        "unitTestInclude": [
+            "${workspaceFolder}/test/unit/include",
+            "${workspaceFolder}/lib/unity/include"
+        ]
+    },
+    "configurations": [
+        {
+            "name": "Unit Test",
+            "includePath": [
+                "${genericInclude}",
+                "${unitTestInclude}"
+            ],
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17"
+        },
+        {
+            "name": "Release",
+            "includePath": [
+                "${genericInclude}"
+            ],
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17"
+        }
+    ],
+    "version": 4
+}
